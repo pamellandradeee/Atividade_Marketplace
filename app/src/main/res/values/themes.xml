@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Atividade_Marketplace" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/yellow</item>
+        <item name="android:statusBarColor">@color/blue</item>
+    </style>
+    <style name="Theme.Atividade_Marketplace" parent="Base.Theme.Atividade_Marketplace" />
+</resources>

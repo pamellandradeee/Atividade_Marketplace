@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_play"
+            android:icon="@drawable/icplay"
+            android:title="Mercado Play" />
+
+        <item
+            android:id="@+id/nav_eletronics"
+            android:icon="@drawable/iceletronics"
+            android:title="Eletrônicos" />
+
+        <item
+            android:id="@+id/nav_moda"
+            android:icon="@drawable/icmoda"
+            android:title="Moda" />
+
+        <item
+            android:id="@+id/nav_beleza"
+            android:icon="@drawable/icbeleza"
+            android:title="Beleza" />
+
+        <item
+            android:id="@+id/nav_food"
+            android:icon="@drawable/icfood"
+            android:title="Supermercado" />
+        <item
+            android:id="@+id/nav_appliances"
+            android:icon="@drawable/icappliances"
+            android:title="Eletrodomésticos" />
+    </group>
+
+</menu>
