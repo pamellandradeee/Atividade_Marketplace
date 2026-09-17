@@ -30,6 +30,7 @@
             android:id="@+id/nav_food"
             android:icon="@drawable/icfood"
             android:title="Supermercado" />
+
         <item
             android:id="@+id/nav_appliances"
             android:icon="@drawable/icappliances"
