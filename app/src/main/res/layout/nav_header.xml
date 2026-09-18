@@ -10,6 +10,6 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/mercado_livre_Logo"
+        android:src="@drawable/mercado_livre_logo"
         android:layout_gravity="center"/>
 </LinearLayout>

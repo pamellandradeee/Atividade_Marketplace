@@ -16,21 +16,23 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:id="@+id/toolbar"
-            android:background="@color/yellow"
+            android:background="@color/blue"
             android:elevation="4dp"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/fragment_container"/>
+            android:id="@+id/fragment_container"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_gravity="center"/>
 
             <com.google.android.material.bottomappbar.BottomAppBar
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/bottomAppbar"
                 android:layout_gravity="bottom"
-                android:backgroundTint="@color/yellow"
+                android:backgroundTint="@color/blue"
                 app:fabCradleMargin="10dp"
                 app:fabAlignmentMode="center"
                 app:fabCradleRoundedCornerRadius="50dp"
@@ -50,7 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/fab"
-                android:backgroundTint="@color/yellow"
+                android:backgroundTint="@color/blue"
                 android:contentDescription="Adicionar"
                 android:src="@drawable/ic_add"
                 app:layout_anchor="@id/bottomAppbar"

@@ -12,7 +12,7 @@
             android:title="Mercado Play" />
 
         <item
-            android:id="@+id/nav_eletronics"
+            android:id="@+id/nav_eletronicos"
             android:icon="@drawable/iceletronics"
             android:title="Eletrônicos" />
 
@@ -27,14 +27,13 @@
             android:title="Beleza" />
 
         <item
-            android:id="@+id/nav_food"
+            android:id="@+id/nav_comida"
             android:icon="@drawable/icfood"
             android:title="Supermercado" />
 
         <item
-            android:id="@+id/nav_appliances"
+            android:id="@+id/nav_eletrodomesticos"
             android:icon="@drawable/icappliances"
             android:title="Eletrodomésticos" />
     </group>
-
 </menu>

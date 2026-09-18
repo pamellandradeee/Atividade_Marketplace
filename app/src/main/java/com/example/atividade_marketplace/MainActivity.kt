@@ -3,6 +3,7 @@ package com.example.atividade_marketplace
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.activity.addCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +12,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.example.atividade_marketplace.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
@@ -65,19 +67,19 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.nav_play -> openFragment(PlayFragment())
-            R.id.nav_eletronics -> openFragment(EletronicsFragment())
+            R.id.nav_eletronicos -> openFragment(EletronicsFragment())
             R.id.nav_moda -> openFragment(ModaFragment())
             R.id.nav_beleza -> Toast.makeText(this, "Beleza", Toast.LENGTH_SHORT).show()
-            R.id.nav_food -> Toast.makeText(this, "Comida", Toast.LENGTH_SHORT).show()
-            R.id.nav_appliances -> Toast.makeText(this, "Eletrônicos", Toast.LENGTH_SHORT).show()
+            R.id.nav_comida -> Toast.makeText(this, "Comida", Toast.LENGTH_SHORT).show()
+            R.id.nav_eletrodomesticos -> Toast.makeText(this, "Eletrodomésticoss", Toast.LENGTH_SHORT).show()
         }
         binding.drawerLayout.closeDrawer(GravityCompat.START)
         return true
     }
 
-    private fun openFragment(fragment:Fragment){
+    private fun openFragment(fragment: Fragment){
         val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.fragment_container.fragment)
+        fragmentTransaction.replace(R.id.fragment_container, fragment)
         fragmentTransaction.commit()
     }
 }
